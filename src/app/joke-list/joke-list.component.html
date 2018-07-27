@@ -1,11 +1,9 @@
+<div class="container">
+  <br>
+  <app-joke-form (jokeCreated)="addNewJoke($event)"></app-joke-form>
+  <app-joke
+    *ngFor="let joke of jokeList"
+    [data]="joke">
 
-  <div class="card card-block"
-     *ngFor="let joke of jokes">
-      <div [hidden]="joke.hide"> 
-  <h4 class="card-title">{{joke.setup}}</h4>
-  <p class="card-text"
-     [hidden]="joke.hide">{{joke.punchline}}</p>
-          </div>
-<a class="btn btn-primary" (click)="toggle(joke)">Hide</a>
-      <a class="btn btn-primary" (click)="jokes.splice($index, 1)" ng-show="!inactive">Delete</a>
+  </app-joke>
 </div>

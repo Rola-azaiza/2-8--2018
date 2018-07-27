@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Joke} from '../models/joke';
 
 @Component({
   selector: 'app-joke-list',
@@ -6,34 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./joke-list.component.css']
 })
 export class JokeListComponent implements OnInit {
-jokes: Object[];
-
+  jokeList: Array<Joke>;
   constructor() {
-    this.jokes = [
-      {
-        setup: "s1",
-        punchline: "p1",
-        hide: true
-      },
-      {
-        setup: "s2",
-        punchline: "p2",
-        hide: true
-      },
-      {
-        setup: "s3",
-        punchline: "p3’",
-        hide: true
-      },
-    ];
+    this.jokeList = [new Joke('', '')    ];
   }
 
   ngOnInit() {
   }
-toggle(joke) {
-  joke.hide = !joke.hide;
-}
 
- 
+  addNewJoke(val: Joke) {
+    this.jokeList.unshift(val);
+  }
 
 }

@@ -1,7 +1,15 @@
-<div class="red">
-<p>
-{{hero}}
-   {{setup}}
-    {{punchline}}
-</p>
+<div >
+  <div id="left" >
+       <p class="p">{{ data.X }}</p>
+    </div>
+      <div id="right"  >
+   <h1>{{ data.Book }}</h1>
+    <p>{{ data.title }}</p>
+          
+           <a  class="glyphicon glyphicon-circle-arrow-down" (click)="data.toggle1()">download</a>
+    
+    <a class="glyphicon glyphicon-circle-arrow-up" (click)="data.toggle2()" >upload</a>
+          </div>
+  
+ 
 </div>

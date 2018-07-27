@@ -1,4 +1,5 @@
-import { Component,Input, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Joke} from '../models/joke';
 
 @Component({
   selector: 'app-joke',
@@ -6,13 +7,8 @@ import { Component,Input, OnInit } from '@angular/core';
   styleUrls: ['./joke.component.css']
 })
 export class JokeComponent implements OnInit {
-hero = 'Windstorm';
- 
-setup:string;
-  punchline:string;
+  @Input() data: Joke;
   constructor() {
-  this.setup="first example";
-  this.punchline="hello example";
   }
 
   ngOnInit() {

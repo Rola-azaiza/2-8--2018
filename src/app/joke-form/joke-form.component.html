@@ -1,0 +1,24 @@
+<div>
+    <div class="Book">Add New BOOK</div>
+  <div class="form-group">
+    <input class="form-control"
+           type="text"
+           placeholder="Book"
+           #Book
+    >
+  </div>
+  <div class="form-group">
+    <input
+      class="form-control"
+      type="text"
+      placeholder="title"
+      #title
+    >
+  </div>
+  <button
+    class="btn btn-primary"
+    (click)="addJoke(Book.value, title.value)">
+    Add
+  </button>
+   
+</div>
