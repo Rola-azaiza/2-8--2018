@@ -1,0 +1,10 @@
+<div  >
+  <button class="btn btn-link" (click)="toggleHidden()">
+    <ng-content ></ng-content>
+
+
+  </button>
+  <div [hidden]="hidden">
+  <ng-content select=[card-body]></ng-content>
+</div>
+</div>

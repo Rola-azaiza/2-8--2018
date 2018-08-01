@@ -15,8 +15,7 @@ import {CarouselItemComponent} from '../carousel-item/carousel-item.component';
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css']
 })
-export
-class CarouselComponent implements AfterContentInit {
+export class CarouselComponent implements AfterContentInit {
   @Input('delay') delay: number;
   currentIndex: number = 0;
   items: CarouselItemComponent[];

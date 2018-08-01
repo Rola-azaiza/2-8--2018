@@ -8,6 +8,8 @@ import { JokeFormComponent } from './joke-form/joke-form.component';
 import { CollapseComponent } from './collapse/collapse.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselItemComponent } from './carousel-item/carousel-item.component';
+import { CollComponent } from './coll/coll.component';
+import { CollItemComponent } from './coll-item/coll-item.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { CarouselItemComponent } from './carousel-item/carousel-item.component';
     JokeFormComponent,
     CollapseComponent,
     CarouselComponent,
-    CarouselItemComponent
+    CarouselItemComponent,
+    CollComponent,
+    CollItemComponent
 
   ],
   imports: [
