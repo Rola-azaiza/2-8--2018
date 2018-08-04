@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, Input, EventEmitter, OnInit, Output} from '@angular/core';
+import {map} from 'rxjs/operators';
+import {fromEvent} from 'rxjs';
 
 @Component({
   selector: 'app-coll-item',
   templateUrl: './coll-item.component.html',
   styleUrls: ['./coll-item.component.css']
 })
-export class CollItemComponent  {
+export class CollItemComponent  implements OnInit {
 
-  hidden: boolean = true;
 
-  toggleHidden() {
-    this.hidden = !this.hidden;
+
+  @Input() opened = false;
+  @Input() title: string;
+  @Output() toggle: EventEmitter<any> = new EventEmitter<any>();
+
+  constructor() {
+  }
+
+  ngOnInit() {
   }
 }

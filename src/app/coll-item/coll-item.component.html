@@ -1,10 +1,10 @@
-<div  >
-  <button class="btn btn-link" (click)="toggleHidden()">
+<div align="center" >
+  <button class="btn btn-secondary btn-lg btn-block" (click)="toggle.emit()" >
     <ng-content ></ng-content>
 
 
   </button>
-  <div [hidden]="hidden">
+  <div *ngIf="opened">
   <ng-content select=[card-body]></ng-content>
 </div>
 </div>

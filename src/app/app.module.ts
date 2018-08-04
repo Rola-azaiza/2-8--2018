@@ -10,6 +10,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselItemComponent } from './carousel-item/carousel-item.component';
 import { CollComponent } from './coll/coll.component';
 import { CollItemComponent } from './coll-item/coll-item.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { CollItemComponent } from './coll-item/coll-item.component';
     CarouselComponent,
     CarouselItemComponent,
     CollComponent,
-    CollItemComponent
+    CollItemComponent,
+    SearchComponent
 
   ],
   imports: [
